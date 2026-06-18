@@ -14,7 +14,18 @@ A repository for experimenting with LLM-based games and interactive AI experienc
    cd llm-games2
    ```
 
-2. Follow any setup instructions for the specific game or module you want to run.
+2. Start a simple static file server from the repository root:
+   ```bash
+   python -m http.server 8000
+   ```
+
+3. Open http://localhost:8000 in your browser and play the basic snake game.
+
+## Included Game
+
+- `index.html` — main page for the snake game
+- `styles.css` — simple styling for the game board
+- `app.js` — snake game logic and controls
 
 ## Contributing
 
