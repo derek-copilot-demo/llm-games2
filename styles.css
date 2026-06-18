@@ -1,0 +1,88 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #09111f 0%, #14253d 45%, #06111b 100%);
+  color: #eff6ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.game-card {
+  width: min(100%, 460px);
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.45);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  color: #7dd3fc;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 8px 0 8px;
+  font-size: 2rem;
+}
+
+.intro, .status {
+  color: #dbeafe;
+  line-height: 1.45;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  color: #bfdbfe;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#score {
+  font-size: 1.6rem;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #22d3ee 0%, #2563eb 100%);
+  color: #eff6ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  background: #020617;
+  border: 2px solid #1e293b;
+  border-radius: 18px;
+}
