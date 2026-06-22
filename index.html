@@ -3,31 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>LLM Games</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #020617;
+        color: #f8fafc;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: linear-gradient(135deg, #09111f 0%, #14253d 45%, #06111b 100%);
+      }
+
+      .card {
+        width: min(100%, 520px);
+        border-radius: 24px;
+        padding: 32px;
+        background: rgba(15, 23, 42, 0.92);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.45);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #dbeafe;
+      }
+
+      a {
+        color: #7dd3fc;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <main class="app-shell">
-      <section class="game-card">
-        <header>
-          <p class="eyebrow">LLM Games</p>
-          <h1>Basic Snake</h1>
-          <p class="intro">Use the arrow keys or WASD to guide the snake. Eat food to grow longer.</p>
-        </header>
-
-        <div class="hud">
-          <div>
-            <span class="label">Score</span>
-            <strong id="score">0</strong>
-          </div>
-          <button id="restartButton" type="button">Restart</button>
-        </div>
-
-        <canvas id="gameCanvas" width="400" height="400" aria-label="Snake game board"></canvas>
-        <p id="status" class="status">Press an arrow key or click Restart to begin.</p>
-      </section>
+    <main class="card">
+      <h1>LLM Games</h1>
+      <p>Browse the available games below. New games can live in their own folder under <code>games/</code>.</p>
+      <ul>
+        <li><a href="/games/snake/">Snake</a></li>
+      </ul>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>

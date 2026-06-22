@@ -19,13 +19,15 @@ A repository for experimenting with LLM-based games and interactive AI experienc
    python -m http.server 8000
    ```
 
-3. Open http://localhost:8000 in your browser and play the basic snake game.
+3. Open http://localhost:8000 in your browser and choose a game from the landing page.
 
-## Included Game
+## Project Structure
 
-- `index.html` — main page for the snake game
-- `styles.css` — simple styling for the game board
-- `app.js` — snake game logic and controls
+- `index.html` — landing page that links to the available games
+- `games/snake/` — standalone folder for the snake game
+  - `index.html` — main page for the snake game
+  - `styles.css` — simple styling for the game board
+  - `app.js` — snake game logic and controls
 
 ## Contributing
 
