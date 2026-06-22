@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-card">
+        <header>
+          <p class="eyebrow">LLM Games</p>
+          <h1>Basic Snake</h1>
+          <p class="intro">Use the arrow keys or WASD to guide the snake. Eat food to grow longer.</p>
+        </header>
+
+        <div class="hud">
+          <div>
+            <span class="label">Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <button id="restartButton" type="button">Restart</button>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400" aria-label="Snake game board"></canvas>
+        <p id="status" class="status">Press an arrow key or click Restart to begin.</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
